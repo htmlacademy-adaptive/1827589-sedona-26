@@ -1,0 +1,38 @@
+.visited-places {
+    margin-bottom: 24px;
+    border-top: 1px solid;
+    border-color: #E5E5E5;
+    width: 280px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
+.visited-places__visited-places-title {
+    margin-top: 39px;
+    padding-top: 24px;
+    border-top: 1px solid;
+    border-color: #E5E5E5;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.visited-places__visit-control {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: none;
+}
+
+.visited-places__control-input {
+    width: 46px;
+    height: 46px;
+    margin: 0;
+    margin-right: 16px;
+}

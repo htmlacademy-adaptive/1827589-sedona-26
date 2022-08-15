@@ -1,0 +1,14 @@
+.main-menu {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.main-menu__hello-sedona {
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../img/main-index/background-sedona.jpg");
+    background-repeat: no-repeat;
+}

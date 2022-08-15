@@ -1,0 +1,20 @@
+.main-nav {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #81B3D2;
+    list-style-type: none;
+}
+
+.main-nav__navigation-item {
+    padding: 17px 0 12px 0;
+    color: #ffffff;
+    border-bottom: 1px solid;
+    border-color: #ffffff;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: #ffffff;
+}
