@@ -2,128 +2,154 @@
 <html class="page" lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body body">
-    <h1 class="visually-hidden">Город Седона</h1>
-    <header class="page-header header">
-        <div class="header__header-logo">
-            <a class="header__sedona-logo"><img src="./img/main-index/Header-logo.svg" width="185" height="96" alt="Логотип."></a>
+  <h1 class="visually-hidden">Город Седона</h1>
+  <header class="page-header header">
+    <div class="header__header-logo">
+      <a class="header__sedona-logo"><img src="./img/main-index/Header-logo.svg" width="185" height="96"
+          alt="Логотип."></a>
+    </div>
+    <div class="header__navigation">
+      <nav class="header__navigation navigation">
+        <input class="navigation__menu-toggle" id="header-navigation__menu-toggle" type="checkbox">
+        <label for="header-navigation__menu-toggle">Меню</label>
+        <ul class="navigation__list main-nav">
+          <li class="main-nav__navigation-item"><a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__navigation-item"><a class="navigation-link">Фото и видео</a>
+          </li>
+          <li class="main-nav__navigation-item"><a class="navigation-link" href="./form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__navigation-item"><a class="navigation-link" href="https://htmlacademy.ru/">Html
+              академия</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="main-content__hello-sedona">
+      <img class="main-content__city-sedona main-content__city-sedona--sedona"
+        src="./img/main-index/sedona-title-form.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+    </div>
+    <section class="main-content__user-photos user-photos">
+      <div class="user-photos__photos-heading">
+        <h2 class="user-photos__photos-caption">Фото и видео</h2>
+        <h3 class="user-photos__photos-subtitle"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+          забыть о политике и экономике.</h3>
+      </div>
+      <ul class="user-photos__photos-sights photos-sights">
+        <li class="photos-sights__photos-list photos-sights__photos-list--spacens">
+          <a class="photos-sights__photos-more" href="#">
+            <img class="photos-sights__photos-image" src="./img/main-index/photo-prostors.jpg" width="280" height="280"
+              alt="Просторы">
+            <h3 class="photos-sights__photos-caption">Неродные просторы</h3>
+            <span class="photos-sights__photos-author">Автор фото: <cite
+                class="photos-sights__user-user">Борис</cite></span>
+          </a>
+          <div class="photos-sights__photos-item">
+            <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="20"
+              alt="like">
+            <p class="photos-sights__photos-text">1350</p>
+          </div>
+        </li>
+        <li class="photos-sights__photos-list">
+          <a class="photos-sights__photos-more" href="#">
+            <img class="photos-sights__photos-image" src="./img/main-index/photo-vegetation.jpg" width="280"
+              height="280" alt="Растительность">
+            <h3 class="photos-sights__photos-caption">Местная растительность</h3>
+            <span class="photos-sights__photos-author">автор фото: <cite
+                class="photos-sights__user-user">Сергей</cite></span>
+          </a>
+          <div class="photos-sights__photos-item">
+            <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="21"
+              alt="like">
+            <p class="photos-sights__photos-text">143</p>
+          </div>
+        </li>
+        <li class="photos-sights__photos-list">
+          <a class="photos-sights__photos-more" href="#">
+            <img class="photos-sights__photos-image" src="./img/main-index/photo-road.jpg" width="280" height="280"
+              alt="Дорога">
+            <h3 class="photos-sights__photos-caption">Дорога на север</h3>
+            <span class="photos-sights__photos-author">автор фото: <cite
+                class="photos-sights__user-user">Петр</cite></span>
+          </a>
+          <div class="photos-sights__photos-item">
+            <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="21"
+              alt="like">
+            <p class="photos-sights__photos-text">96</p>
+          </div>
+        </li>
+        <li class="photos-sights__photos-list">
+          <a class="photos-sights__photos-more" href="#">
+            <img class="photos-sights__photos-image" src="./img/main-index/photo-bridge-devils.jpg" width="280"
+              height="280" alt="скала">
+            <h3 class="photos-sights__photos-caption">Мост дьявола</h3>
+            <span class="photos-sights__photos-author">автор фото: <cite
+                class="photos-sights__user-user">Антон</cite></span>
+          </a>
+          <div class="photos-sights__photos-item">
+            <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="21"
+              alt="like">
+            <p class="photos-sights__photos-text">254</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="main-content__prisentacions-list prisentacions-list">
+      <h2 class="prisentacions-list__prisentacions-caption">Все еще сомневаетесь?</h2>
+      <h3 class="prisentacions-list__prisentacions-subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не
+        подорожали в очередной раз!</h3>
+      <ul class="prisentacions-list__prisentacions-item prisentacions-item">
+        <li class="prisentacions-item__video-content">
+          <video class="prisentacions-item__our-video" width="280" height="177"
+            poster="./img/main-index/video-sedona.jpg">
+            <source src="#" type="video/mp4">
+            <source src="#" type="video/ogg">
+          </video>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer-list">
+    <div class="footer-list__footer-social">
+      <div class="footer-list__footer-visit">
+        <img class="footer-list__visit-image" src="./img/main-index/visitsedona.svg" alt="хештег Седона">
+      </div>
+      <div class="footer-list__social-networks">
+        <ul class="social-list">
+          <li class="social-list__social-item">
+            <a class="social-list__vkontakte" href="https://vk.com/"><img src="./img/main-index/social-Vkontakte.svg"
+                width="48" height="48" alt="Вконтакте.">
+              <span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li class="social-list__social-item">
+            <a class="social-list__facebook" href="https://telegram.com/"><img
+                src="./img/main-index/social-telegram.svg" width="48" height="48" alt="Телеграм.">
+              <span class="visually-hidden">Телеграм</span></a>
+          </li>
+          <li class="social-list__social-item">
+            <a class="social-list__youtube" href="https://Youtube.com/"><img src="./img/main-index/social-Youtube.svg"
+                width="48" height="48" alt="ютуб.">
+              <span class="visually-hidden">Ютуб</span></a>
+          </li>
+        </ul>
+        <div class="footer-list__developed">
+          <span class="footer-list__html-akademy">Разработанно
+            <a class="footer-list__html-akademy-logo" href="https://htmlacademy.ru/"></a></span>
+          <img class="footer-list__html-akademy-image" src="./img/main-index/footer-htmlacademy.svg" width="27"
+            height="35" alt="html академия.">
+          <span class="visually-hidden">.html academy</span>
         </div>
-        <div class="header__navigation">
-            <nav class="header__navigation navigation">
-                <input class="navigation__menu-toggle" id="header-navigation__menu-toggle" type="checkbox">
-                <label for="header-navigation__menu-toggle">Меню</label>
-                <ul class="navigation__list main-nav">
-                    <li class="main-nav__navigation-item"><a class="navigation-link" href="index.html">Главная</a>
-                    </li>
-                    <li class="main-nav__navigation-item"><a class="navigation-link">Фото и видео</a>
-                    </li>
-                    <li class="main-nav__navigation-item"><a class="navigation-link" href="./form.html">Форма отзыва</a>
-                    </li>
-                    <li class="main-nav__navigation-item"><a class="navigation-link" href="https://htmlacademy.ru/">Html академия</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="main-content">
-        <div class="main-content__hello-sedona">
-            <img class="main-content__city-sedona main-content__city-sedona--sedona" src="./img/main-index/sedona-title-form.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
-        </div>
-        <section class="main-content__user-photos user-photos">
-            <div class="user-photos__photos-heading">
-                <h2 class="user-photos__photos-caption">Фото и видео</h2>
-                <h3 class="user-photos__photos-subtitle"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h3>
-            </div>
-            <ul class="user-photos__photos-sights photos-sights">
-                <li class="photos-sights__photos-list photos-sights__photos-list--prostors">
-                    <a class="photos-sights__photos-more" href="#">
-                        <img class="photos-sights__photos-image" src="./img/main-index/photo-prostors.jpg" width="280" height="280" alt="Просторы">
-                        <h3 class="photos-sights__photos-caption">Неродные просторы</h3>
-                        <span class="photos-sights__photos-author">Автор фото: <cite class="photos-sights__user-user">Борис</cite></span></a>
-                    <div class="photos-sights__photos-item">
-                        <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="20" alt="like">
-                        <p class="photos-sights__photos-text">1350</p>
-                    </div>
-                </li>
-                <li class="photos-sights__photos-list">
-                    <a class="photos-sights__photos-more" href="#">
-                        <img class="photos-sights__photos-image" src="./img/main-index/photo-vegetation.jpg" width="280" height="280" alt="Растительность">
-                        <h3 class="photos-sights__photos-caption">Местная растительность</h3>
-                        <span class="photos-sights__photos-author">автор фото: <cite class="photos-sights__user-user">Сергей</cite></span></a>
-                    <div class="photos-sights__photos-item">
-                        <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="21" alt="like">
-                        <p class="photos-sights__photos-text">143</p>
-                    </div>
-                </li>
-                <li class="photos-sights__photos-list">
-                    <a class="photos-sights__photos-more" href="#">
-                        <img class="photos-sights__photos-image" src="./img/main-index/photo-road.jpg" width="280" height="280" alt="Дорога">
-                        <h3 class="photos-sights__photos-caption">Дорога на север</h3>
-                        <span class="photos-sights__photos-author">автор фото: <cite class="photos-sights__user-user">Петр</cite></span></a>
-                    <div class="photos-sights__photos-item">
-                        <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="21" alt="like">
-                        <p class="photos-sights__photos-text">96</p>
-                    </div>
-                </li>
-                <li class="photos-sights__photos-list">
-                    <a class="photos-sights__photos-more" href="#">
-                        <img class="photos-sights__photos-image" src="./img/main-index/photo-bridge-devils.jpg" width="280" height="280" alt="скала">
-                        <h3 class="photos-sights__photos-caption">Мост дьявола</h3>
-                        <span class="photos-sights__photos-author">автор фото: <cite class="photos-sights__user-user">Антон</cite></span></a>
-                    <div class="photos-sights__photos-item">
-                        <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="21" alt="like">
-                        <p class="photos-sights__photos-text">254</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="main-content__prisentacions-list prisentacions-list">
-            <h2 class="prisentacions-list__prisentacions-caption">Все еще сомневаетесь?</h2>
-            <h3 class="prisentacions-list__prisentacions-subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</h3>
-            <ul class="prisentacions-list__prisentacions-item prisentacions-item">
-                <li class="prisentacions-item__video-content">
-                    <video class="prisentacions-item__our-video" width="280" height="177" poster="./img/main-index/video-sedona.jpg">
-                <source src="#" type="video/mp4">
-                <source src="#" type="video/ogg">
-              </video>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer class="footer-list">
-        <div class="footer-list__footer-social">
-            <div class="footer-list__footer-visit">
-                <img class="footer-list__visit-image" src="./img/main-index/visitsedona.svg" alt="хештег Седона">
-            </div>
-            <div class="footer-list__social-networks">
-                <ul class="social-list">
-                    <li class="social-list__social-item">
-                        <a class="social-list__vkontakte" href="https://vk.com/"><img src="./img/main-index/social-Vkontakte.svg" width="48" height="48" alt="Вконтакте.">
-                            <span class="visually-hidden">Вконтакте</span></a>
-                    </li>
-                    <li class="social-list__social-item">
-                        <a class="social-list__facebook" href="https://telegram.com/"><img src="./img/main-index/social-telegram.svg" width="48" height="48" alt="Телеграм.">
-                            <span class="visually-hidden">Телеграм</span></a>
-                    </li>
-                    <li class="social-list__social-item">
-                        <a class="social-list__youtube" href="https://Youtube.com/"><img src="./img/main-index/social-Youtube.svg" width="48" height="48" alt="ютуб.">
-                            <span class="visually-hidden">Ютуб</span></a>
-                    </li>
-                </ul>
-                <div class="footer-list__developed">
-                    <span class="footer-list__html-akademy">Разработанно
-              <a class="footer-list__html-akademy-logo" href="https://htmlacademy.ru/"></a></span>
-                    <img class="footer-list__html-akademy-image" src="./img/main-index/footer-htmlacademy.svg" width="27" height="35" alt="html академия.">
-                    <span class="visually-hidden">.html academy</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -1,54 +1,52 @@
 .data-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 39px;
-    padding-top: 24px;
-    border-top: 1px solid;
-    border-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 39px;
+  padding-top: 24px;
+  border-top: 1px solid;
+  border-color: #e5e5e5;
 }
 
 .data-list__contacts-caption {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    margin: 0;
-    margin: 0;
-    text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  text-align: center;
 }
 
 .data-list__contacts-text {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #333333;
-    margin: 0;
-    padding-top: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  padding-top: 20px;
 }
 
 .data-list__contacts {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-    background-color: #F2F2F2;
-    text-transform: none;
-    padding: 16px 0 16px 16px;
-    border: 0;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  background-color: #f2f2f2;
+  text-transform: none;
+  padding: 16px 0 16px 16px;
+  border: 0;
 }
 
 .sss {
-    display: flex;
-    width: 280px;
-    margin: 0 auto;
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }

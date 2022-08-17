@@ -1,40 +1,40 @@
 .main-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 21px;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
 }
 
 .main-aside__appointment-caption {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 21px;
-    line-height: 26px;
-    margin: 0;
-    padding-top: 38px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+  padding-top: 38px;
 }
 
 .main-aside__appointment-text {
-    width: 261px;
-    text-align: center;
+  width: 261px;
+  text-align: center;
 }
 
 .main-aside__appointment-button {
-    width: 282px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #81B3D2;
-    padding: 16px 0;
+  width: 282px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding: 16px 0;
 }
