@@ -1,0 +1,78 @@
+.photos-sights {
+  min-width: 320px;
+  margin: 0 auto;
+  margin-top: 24px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photos-sights__photos-list {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid;
+  border-color: #e5e5e5;
+  padding-bottom: 25px;
+}
+
+.photos-sights__photos-more {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.photos-sights__photos-caption {
+  margin: 0;
+  padding-top: 15px;
+}
+
+.photos-sights__photos-author {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: none;
+}
+
+.photos-sights__user-user {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: none;
+}
+
+.photos-sights__photos-item {
+  margin-top: 11px;
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.photos-sights__photos-like {
+  margin-right: 14px;
+}
+
+.photos-sights__photos-text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+}
