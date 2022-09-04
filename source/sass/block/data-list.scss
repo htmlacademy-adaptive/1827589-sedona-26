@@ -7,16 +7,15 @@
   border-top: 1px solid;
   border-color: #e5e5e5;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
     border-top: none;
     align-items: center;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 0 0 94px;
-
   }
 }
 
@@ -36,18 +35,17 @@
   color: #333333;
   margin-top: 16px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     align-items: flex-start;
   }
 }
-
 
 .data-list__contacts {
   font-weight: 700;
@@ -59,11 +57,11 @@
   border: 0;
   width: 206px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     min-width: 222px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     min-width: 330px;
   }
 }
@@ -74,14 +72,15 @@
   display: flex;
   justify-content: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 64px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
+
 .data-list__content-name {
   font-weight: 400;
   font-size: 14px;

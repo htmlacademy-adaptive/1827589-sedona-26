@@ -1,5 +1,5 @@
 .interestingly {
-  min-width:320px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@
 
 .impression-groups {
   min-width: 320px;
-  border:0;
+  border: 0;
   border-bottom: 1px solid;
   border-color: #e5e5e5;
   padding: 0 0 24px 0;
@@ -31,7 +31,6 @@
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +49,7 @@
 }
 
 .impression-groups__impression-list {
-  padding: 0 20px ;
+  padding: 0 20px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -61,7 +60,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:0;
+    padding: 0;
   }
 }
 
@@ -95,14 +94,14 @@
 }
 
 
-.impression-groups__control-input+label {
+.impression-groups__control-input + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.impression-groups__control-input+label::before {
-  content: '';
+.impression-groups__control-input + label::before {
+  content: "";
   display: inline-block;
   width: 46px;
   height: 46px;
@@ -114,7 +113,7 @@
   background-position: center center;
 }
 
-.impression-groups__control-input:checked+label::before {
+.impression-groups__control-input:checked + label::before {
   background-color: #f2f2f2;
   background-image: url("../../img/main-index/Shape.svg");
 }

@@ -15,7 +15,6 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-
 }
 
 .main-description__description-list {
@@ -27,7 +26,6 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
 }
 
 .main-description__description {
@@ -129,7 +127,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-
 }
 
 .main-description__item-text {
@@ -153,7 +150,6 @@
     flex-direction: row;
     min-width: 100%;
     padding-bottom: 0;
-
   }
 }
 
@@ -198,7 +194,6 @@
   @media (min-width: $desktop-width) {
     width: 315px;
   }
-
 }
 
 .main-description__image {
