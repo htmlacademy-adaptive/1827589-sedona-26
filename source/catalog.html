@@ -3,39 +3,43 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body body">
   <h1 class="visually-hidden">Город Седона</h1>
-  <header class="page-header header">
-    <div class="header__header-logo">
-      <a class="header__sedona-logo"><img src="./img/main-index/Header-logo.svg" width="185" height="96"
-          alt="Логотип."></a>
-    </div>
-    <div class="header__navigation">
-      <nav class="header__navigation navigation">
-        <input class="navigation__menu-toggle" id="header-navigation__menu-toggle" type="checkbox">
-        <label for="header-navigation__menu-toggle">Меню</label>
-        <ul class="navigation__list main-nav">
-          <li class="main-nav__navigation-item"><a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__navigation-item"><a class="navigation-link">Фото и видео</a>
-          </li>
-          <li class="main-nav__navigation-item"><a class="navigation-link" href="./form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__navigation-item"><a class="navigation-link" href="https://htmlacademy.ru/">Html
-              академия</a>
-          </li>
-        </ul>
-      </nav>
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <a class="header__logo"><img src="./img/main-index/Header-logo.svg" width="185" height="96" alt="Логотип."></a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__navigation-item"><a class="navigation-link" href="./index.html">Главная</a>
+            </li>
+            <li class="header__navigation-item"><a class="navigation-link">Фото и видео</a>
+            </li>
+            <li class="header__navigation-item"><a class="navigation-link" href="./form.html">Форма отзыва</a>
+            </li>
+            <li class="header__navigation-item"><a class="navigation-link" href="https://htmlacademy.ru/">Html
+                академия</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__burger">
+          <script src="./js/script"></script>
+          <span class="header__span-burger"></span>
+        </div>
+      </div>
     </div>
   </header>
   <main class="main-content">
     <div class="main-content__hello-sedona">
       <img class="main-content__city-sedona main-content__city-sedona--sedona"
         src="./img/main-index/sedona-title-form.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+      <img class="main-content__intro-triangle" src="./img/main-index/header-decoration.svg" width="320" height="57"
+        alt="Нижний декоративный элемент.">
     </div>
     <section class="main-content__user-photos user-photos">
       <div class="user-photos__photos-heading">
@@ -46,16 +50,18 @@
       <ul class="user-photos__photos-sights photos-sights">
         <li class="photos-sights__photos-list photos-sights__photos-list--spacens">
           <a class="photos-sights__photos-more" href="#">
-            <img class="photos-sights__photos-image" src="./img/main-index/photo-prostors.jpg" width="280" height="280"
-              alt="Просторы">
+            <img class="photos-sights__photos-image photos-sights__photos-image--spacens"
+              src="./img/main-index/photo-open-spaces.jpg" width="280" height="280" alt="Просторы">
+          </a>
+          <div class="photos-sights__photos-information">
             <h3 class="photos-sights__photos-caption">Неродные просторы</h3>
             <span class="photos-sights__photos-author">Автор фото: <cite
                 class="photos-sights__user-user">Борис</cite></span>
-          </a>
-          <div class="photos-sights__photos-item">
-            <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="20"
-              alt="like">
-            <p class="photos-sights__photos-text">1350</p>
+            <div class="photos-sights__photos-item">
+              <img class="photos-sights__photos-like" src="./img/main-index/like-icon.svg" width="23" height="20"
+                alt="like">
+              <p class="photos-sights__photos-text">1350</p>
+            </div>
           </div>
         </li>
         <li class="photos-sights__photos-list">
@@ -140,13 +146,13 @@
               <span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
-        <div class="footer-list__developed">
-          <span class="footer-list__html-akademy">Разработанно
-            <a class="footer-list__html-akademy-logo" href="https://htmlacademy.ru/"></a></span>
-          <img class="footer-list__html-akademy-image" src="./img/main-index/footer-htmlacademy.svg" width="27"
-            height="35" alt="html академия.">
-          <span class="visually-hidden">.html academy</span>
-        </div>
+      </div>
+      <div class="footer-list__developed">
+        <span class="footer-list__html-akademy">Разработанно
+          <a class="footer-list__html-akademy-logo" href="https://htmlacademy.ru/"></a></span>
+        <img class="footer-list__html-akademy-image" src="./img/main-index/footer-htmlacademy.svg" width="27"
+          height="34" alt="html академия.">
+        <span class="visually-hidden">.html academy</span>
       </div>
     </div>
   </footer>

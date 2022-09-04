@@ -1,35 +1,42 @@
 .your-data {
-  width: 320px;
-  padding-top: 24px;
+  padding-top: 28px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  border-top: 1px solid;
-  border-color: #e5e5e5;
+
+  @media(min-width: $tablet-width) {
+    padding: 0 44px 0 0;
+    border-top: none;
+    min-width: 36%;
+    border-right: 1px solid;
+    border-color: #dbdbdb;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 0 63px 0 0;
+  }
 }
 
 .your-data__caption {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
   margin: 0;
   text-align: center;
 }
 
-.your-data__content-text {
-  width: 280px;
+.your-data__content-item {
+  min-width: 280px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 0 auto;
-  margin-top: 16px;
+  margin-top: 20px;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 28px;
+  }
 }
 
 .your-data__content-name {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;

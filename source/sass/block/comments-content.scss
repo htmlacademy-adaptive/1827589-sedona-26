@@ -7,29 +7,32 @@
   display: flex;
   flex-direction: column;
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 100%;
+    border: 1px solid;
+    border-color: #dbdbdb;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
 }
 
 .comments-content__comments-control {
-  margin: 0 auto;
-  margin-top: 39px;
   padding-top: 24px;
-  border-top: 1px solid;
-  border-color: #e5e5e5;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    width: 355px;
+  }
+
 }
 
 .comments-content__control-comments {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-top: 20px;
+  margin: 20px 0 56px 0;
   padding: 16px;
   border: 0;
   width: 250px;
@@ -37,10 +40,19 @@
   background-color: #e5e5e5;
   color: #ffffff;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 616px;
+    padding: 16px 16px 26px 16px;
+    margin: 20px auto 48px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 736px;
+  }
 }
 
 .comments-content__input-comments {
-  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -49,19 +61,25 @@
   color: #ffffff;
   width: 280px;
   border: 0;
-  margin-top: 56px;
   padding: 18.5px 0 13.5px 0;
   text-transform: uppercase;
 }
 
 .comments-content__comments-title {
-  width: 280px;
+  min-width: 280px;
   text-align: end;
-  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
   color: #333333;
   margin-top: 3px;
+}
+
+.comments-content__comments-item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

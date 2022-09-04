@@ -1,16 +1,53 @@
 .main-subject {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
 }
 
 .main-subject__hello-sedona {
   min-width: 320px;
   min-height: 155px;
   padding-top: 52px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url("../../img/main-index/background-sedona.jpg");
   background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center bottom;
+
+  @media(min-width: $tablet-width) {
+    height: 290px;
+  }
+}
+
+.main-subject__city-sedona--sedona {
+  padding: 52px 0 10px 0;
+
+  @media(min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
+    padding: 95px 0 60px 0;
+  }
+}
+.main-subject__intro-triangle {
+  position: relative;
+  top: 2px;
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+    width: 100%;
+  }
+}
+
+.main-subject__main-post {
+  margin-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 100px;
+  }
 }

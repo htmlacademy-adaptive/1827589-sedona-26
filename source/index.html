@@ -3,112 +3,115 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body body">
   <h1 class="visually-hidden">Город Седона</h1>
-  <header class="page-header header">
-    <div class="header__header-logo">
-      <a class="header__sedona-logo"><img src="./img/main-index/Header-logo.svg" width="185" height="96"
-          alt="Логотип."></a>
-    </div>
-    <div class="header__navigation">
-      <nav class="header__navigation navigation">
-        <input class="navigation__menu-toggle" id="navigation__menu-toggle" type="checkbox">
-        <label for="navigation__menu-toggle">Меню</label>
-        <ul class="navigation__list main-nav">
-          <li class="main-nav__navigation-item"><a class="navigation-link">Главная</a>
-          </li>
-          <li class="main-nav__navigation-item"><a class="navigation-link" href="./catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__navigation-item"><a class="navigation-link" href="./form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__navigation-item"><a class="navigation-link" href="https://htmlacademy.ru/">Html
-              академия</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a class="header__logo"><img src="./img/main-index/Header-logo.svg" width="185" height="96"
+              alt="Логотип."></a>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__navigation-item"><a class="navigation-link">Главная</a>
+              </li>
+              <li class="header__navigation-item"><a class="navigation-link" href="./catalog.html">Фото и видео</a>
+              </li>
+              <li class="header__navigation-item"><a class="navigation-link" href="./form.html">Форма отзыва</a>
+              </li>
+              <li class="header__navigation-item"><a class="navigation-link" href="https://htmlacademy.ru/">Html
+                  академия</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__burger">
+            <script src="./js/script"></script>
+            <span class="header__span-burger"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
   <main class="main-menu">
     <div class="main-menu__hello-sedona">
-      <img class="main-menu__city main-menu__city--welcom" src="./img/main-index/text-index.svg" width="282"
-        height="214" alt="Добро пожаловать в Седону.">
+      <img class="main-menu__city main-menu__city--welcom" src="./img/main-index/text-index.svg" width="280"
+        height="217" alt="Добро пожаловать в Седону.">
+      <img class="main-menu__intro-triangle" src="./img/main-index/header-decoration.svg" width="320" height="57"
+        alt="Нижний декоративный элемент.">
     </div>
-    <section class="main-item">
-      <h2 class="main-item__main-caption">Седона — небольшой<br>городок в Аризоне, заслуживающий большего!</h2>
+    <section class="main-item ">
+      <h2 class="main-item__main-caption">Седона—небольшой городок в Аризоне, заслуживающий большего!</h2>
     </section>
     <section class="main-list">
       <h2 class="main-list__main-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
       <ul class="main-list__main-item main-description">
-        <li class="main-description__city-items main-description__city-items--small-town">
-          <div class="main-description__city-style">
-            <h3 class="main-description__city-caption">Настоящий городок
-            </h3>
+        <li class="main-description__description-list">
+          <div class="main-description__description">
+            <img class="main-description__top-decoration" src="./img/main-index/description-decoration-top.svg"
+              width="320" height="37" alt="верхний декоративный элемент">
+            <h3 class="main-description__city-caption">Настоящий городок</h3>
             <span class="main-description__city-subtitle">— №1 —</span>
             <p class="main-description__city-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img class="main-description__city-image" src="./img/main-index/photo-city.jpg" width="320" height="260"
+          <img class="main-description__image" src="./img/main-index/photo-city.jpg" width="320" height="260"
             alt="Наш городок.">
+          <ul class="main-description__description-content">
+            <li class="main-description__description-item">
+              <img class="main-description__item-image" src="./img/main-index/icon-house.svg" width="39" height="37"
+                alt="Жилье.">
+              <div class="main-description__item-style">
+                <h3 class="main-description__item-caption">Жильё</h3>
+                <p class="main-description__item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
+            </li>
+            <li class="main-description__description-item">
+              <img class="main-description__item-image" src="./img/main-index/icon-burger.svg" width="39" height="37"
+                alt="Еда.">
+              <div class="main-description__item-style">
+                <h3 class="main-description__item-caption">Еда</h3>
+                <p class="main-description__item-text">Всегда заказывайте фирменный бургер, вы неразочаруетесь!</p>
+              </div>
+            </li>
+            <li class="main-description__description-item">
+              <img class="main-description__item-image" src="./img/main-index/icon-gift.svg" width="39" height="37"
+                alt="Сувениры.">
+              <div class="main-description__item-style">
+                <h3 class="main-description__item-caption">Сувениры</h3>
+                <p class="main-description__item-text">Не только китайского,но и местного производства!</p>
+              </div>
+            </li>
+          </ul>
         </li>
-        <li class="main-description__description-items">
-          <div class="main-description__description-style">
-            <img class="main-description__housing-image" src="./img/main-index/icon-house.svg" width="39" height="37"
-              alt="Жилье.">
-            <h3 class="main-description__description-caption">Жильё</h3>
+        <li class="main-description__description-list">
+          <img class="main-description__image" src="./img/main-index/photo-devils-bridge.jpg" width="320" height="260"
+            alt="Наш городок.">
+          <div class="main-description__description">
+            <h3 class="main-description__city-caption">Там есть мост дьявола</h3>
+            <span class="main-description__city-subtitle">— №2 —</span>
+            <p class="main-description__city-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
-          <p class="main-description__description-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </li>
-        <li class="main-description__description-items">
-          <div class="main-description__description-style">
-            <img class="main-description__meal-image" src="./img/main-index/icon-burger.svg" width="39" height="37"
-              alt="Еда.">
-            <h3 class="main-description__description-caption">Еда</h3>
-          </div>
-          <p class="main-description__description-text">Всегда заказывайте топовый фирменный бургер, вы не
-            разочаруетесь!</p>
-        </li>
-        <li class="main-description__description-items">
-          <div class="main-description__description-style">
-            <img class="main-description__souvenirs-image" src="./img/main-index/icon-gift.svg" width="39" height="37"
-              alt="Сувениры.">
-            <h3 class="main-description__description-caption">Сувениры</h3>
-          </div>
-          <p class="main-description__description-text">Не только китайского,но и настоящего местного производства!</p>
-        </li>
-        <li class="main-description__attractions-items main-description__attractions-items--small-town">
-
-          <div class="main-description__attractions-style">
-            <h3 class="main-description__attractions-caption">Там есть мост дьявола
-            </h3>
-            <span class="main-description__attractions-subtitle">— №2 —</span>
-            <p class="main-description__attractions-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="main-description__attractions-image" src="./img/main-index/photo-bridge@1x.jpg" width="320"
-              height="260" alt="Наш городок.">
-          </div>
-        </li>
-        <li class="main-description__content-items">
-          <div class="main-description__content-style">
-            <h3 class="main-description__content-caption">Небольшая площадь</h3>
-            <span class="main-description__content-subtitle">— №3 —</span>
-            <p class="main-description__content-text">Все интересные места находятся очень близко</p>
-          </div>
-        </li>
-        <li class="main-description__content-items">
-          <div class="main-description__content-style">
-            <h3 class="main-description__content-caption">Красивая дорога</h3>
-            <span class="main-description__content-subtitle">— №4 —</span>
-            <p class="main-description__content-text">Ехать из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </li>
-        <li class="main-description__content-items ">
-          <div class="main-description__content-style main-description__content-style--end">
-            <h3 class="main-description__content-caption">Мало туристов</h3>
-            <span class="main-description__content-subtitle">— №5 —</span>
-            <p class="main-description__content-text">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
+          <ul class="main-description__description-contents">
+            <li class="main-description__description-items">
+              <h3 class="main-description__items-caption">Небольшая площадь</h3>
+              <span class="main-description__items-subtitle">— №3 —</span>
+              <p class="main-description__items-text">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="main-description__description-items">
+              <h3 class="main-description__items-caption">Красивая дорога</h3>
+              <span class="main-description__items-subtitle">— №4 —</span>
+              <p class="main-description__items-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="main-description__description-items">
+              <h3 class="main-description__items-caption">Мало туристов</h3>
+              <span class="main-description__items-subtitle">— №5 —</span>
+              <p class="main-description__items-text">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
         </li>
       </ul>
     </section>

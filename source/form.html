@@ -3,126 +3,146 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body body">
   <h1 class="visually-hidden">Город Седона</h1>
-  <header class="page-header header">
-    <div class="header__header-logo">
-      <a class="header__sedona-logo"><img src="./img/main-index/Header-logo.svg" width="185" height="96"
-          alt="Логотип."></a>
-    </div>
-    <div class="header__navigation">
-      <nav class="header__navigation navigation">
-        <input class="navigation__menu-toggle" id="header-navigation__menu-toggle" type="checkbox">
-        <label for="header-navigation__menu-toggle">Меню</label>
-        <ul class="navigation__list main-nav">
-          <li class="main-nav__navigation-item"><a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__navigation-item"><a class="navigation-link" href="./catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__navigation-item"><a class="navigation-link">Форма отзыва</a>
-          </li>
-          <li class="main-nav__navigation-item"><a class="navigation-link" href="https://htmlacademy.ru/">Html
-              академия</a>
-          </li>
-        </ul>
-      </nav>
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <a class="header__logo"><img src="./img/main-index/Header-logo.svg" width="185" height="96" alt="Логотип."></a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__navigation-item"><a class="navigation-link" href="./index.html">Главная</a>
+            </li>
+            <li class="header__navigation-item"><a class="navigation-link" href="./catalog.html">Фото и видео</a>
+            </li>
+            <li class="header__navigation-item"><a class="navigation-link">Форма отзыва</a>
+            </li>
+            <li class="header__navigation-item"><a class="navigation-link" href="https://htmlacademy.ru/">Html
+                академия</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__burger">
+          <script src="./js/script"></script>
+          <span class="header__span-burger"></span>
+        </div>
+      </div>
     </div>
   </header>
   <main class="main-subject">
     <div class="main-subject__hello-sedona">
       <img class="main-subject__city-sedona main-subject__city-sedona--sedona"
         src="./img/main-index/sedona-title-form.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+      <img class="main-subject__intro-triangle" src="./img/main-index/header-decoration.svg" width="320" height="57"
+        alt="Нижний декоративный элемент.">
     </div>
-    <section class="main-post">
+    <section class="main-subject__main-post main-post">
       <h2 class="main-post__opininion-caption">Оставьте свой отзыв</h2>
       <p class="main-post__opininion-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
     </section>
     <form class="user-data" action="https://echo.htmlacademy.ru/" method="get">
-      <section class="user-data__your-data your-data">
-        <h2 class="your-data__caption">Представьтесь:</h2>
-        <p class="your-data__content-text">
-          <label class="your-data__content-name" for="appointment-name">Имя*:</label>
-          <input class="your-data__form-content" type="text" id="appointment-name" name="name" placeholder="Петр">
-        </p>
-        <p class="your-data__content-text">
-          <label class="your-data__content-name" for="appointment-surname">Фамилия*:</label>
-          <input class="your-data__form-content" type="text" id="appointment-surname" name="surname"
-            placeholder="Пустота">
-        </p>
-        <p class="your-data__content-text">
-          <label class="your-data__content-name" for="appointment-patronymic">Отчество:</label>
-          <input class="your-data__form-content" type="text" id="appointment-patronymic" name="patronymic"
-            placeholder="Викторович">
-        </p>
-      </section>
-      <section class="user-data__data-list data-list">
-        <h2 class="data-list__contacts-caption">Контактная информация:</h2>
-        <p class="data-list__contacts-text">
-          <label class="your-data__content-name" for="appointment-phone">Контактный телефон*:</label>
-        <div class="sss">
-          <input class="data-list__contacts" type="tel" id="appointment-phone" name="phone"
-            placeholder="Введите телефон">
-          <img class="data-list__phone-image" src="./img/main-index/icon-phone.svg" alt="телефон">
-        </div>
-        </p>
-        <p class="data-list__contacts-text">
-          <label class="your-data__content-name" for="appointment-email">Электронная почта*:</label>
-        <div class="sss">
-          <input class="data-list__contacts" type="text" id="appointment-email" name="email"
-            placeholder="Введите e-mail">
-          <img class="data-list__email-image" src="./img/main-index/icon-email.svg" alt="почта">
-        </div>
-        </p>
-      </section>
+      <div class="user-data__information">
+        <section class="user-data__your-data your-data">
+          <h2 class="your-data__caption">Представьтесь:</h2>
+          <div class="your-data__content-item">
+            <label class="your-data__content-name" for="appointment-name">Имя*:</label>
+            <input class="your-data__form-content" type="text" id="appointment-name" name="name" placeholder="Петр">
+          </div>
+          <div class="your-data__content-item">
+            <label class="your-data__content-name" for="appointment-surname">Фамилия*:</label>
+            <input class="your-data__form-content" type="text" id="appointment-surname" name="surname"
+              placeholder="Пустота">
+          </div>
+          <div class="your-data__content-item">
+            <label class="your-data__content-name" for="appointment-patronymic">Отчество:</label>
+            <input class="your-data__form-content" type="text" id="appointment-patronymic" name="patronymic"
+              placeholder="Викторович">
+          </div>
+        </section>
+        <section class="user-data__data-list data-list">
+          <h2 class="data-list__contacts-caption">Контактная информация:</h2>
+          <div class="data-list__contacts-item">
+            <label class="data-list__content-name" for="appointment-phone">Контактный телефон*:</label>
+            <div class="data-list__contacts-items">
+              <input class="data-list__contacts" type="tel" id="appointment-phone" name="phone"
+                placeholder="Введите телефон">
+              <img class="data-list__phone-image" src="./img/main-index/icon-phone.svg" width="56" height="56"
+                alt="телефон">
+            </div>
+          </div>
+          <div class="data-list__contacts-item">
+            <label class="data-list__content-name" for="appointment-email">Электронная почта*:</label>
+            <div class="data-list__contacts-items">
+              <input class="data-list__contacts" type="text" id="appointment-email" name="email"
+                placeholder="Введите e-mail">
+              <img class="data-list__email-image" src="./img/main-index/icon-email.svg" alt="почта">
+            </div>
+          </div>
+        </section>
+      </div>
       <section class="main-subject__interestingly interestingly">
         <h2 class="visually-hidden">Впечатления</h2>
         <fieldset class="interestingly__impression-groups impression-groups">
           <legend class="impression-groups__impression-title">Ваше общее впечатление:</legend>
           <ul class="impression-groups__impression-list">
             <li class="impression-groups__impression-item">
-              <label class="impression-groups__impression-control">
-                <input class="impression-groups__control-input" type="radio" name="impression-group"
-                  value="Скорее положительные" checked>Скорее положительные
-              </label>
+
+              <input type="radio" class="impression-groups__control-input" id="radio-impression" name="radio"
+                value="Скорее положительные" checked>
+              <label class="impression-groups__impression-control" for="radio-impression">Скорее положительные</label>
             </li>
             <li class="impression-groups__impression-item">
-              <label class="impression-groups__impression-control">
-                <input class="impression-groups__control-input" type="radio" name="impression-group"
-                  value="Затрудняюсь ответить">Затрудняюсь ответить
-              </label>
+              <input type="radio" class="impression-groups__control-input" id="radio-impression" name="radio"
+                value="Затрудняюсь ответить">
+              <label class="impression-groups__impression-control" for="radio-impression">Затрудняюсь ответить</label>
             </li>
             <li class="impression-groups__impression-item">
-              <label class="impression-groups__impression-control">
-                <input class="impression-groups__control-input" type="radio" name="impression-group"
-                  value="Скорее отрицательные">Скорее отрицательные
-              </label>
+              <input type="radio" class="impression-groups__control-input" id="radio-impression" name="radio"
+                value="Скорее отрицательные">
+              <label class="impression-groups__impression-control" for="radio-impression">Скорее отрицательные</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="interestingly__visited-places visited-places">
           <legend class="visited-places__visited-places-title">Посещенные достопримечательности:</legend>
-          <label class="visited-places__visit-control">
-            <input class="visited-places__control-input" type="checkbox" name="devils-bridge" checked>Мост
-            Дьявола</label>
-          <label class="visited-places__visit-control">
-            <input class="visited-places__control-input" type="checkbox" name="mountain-bell"
-              checked>Гора-колокол</label>
-          <label class="visited-places__visit-control">
-            <input class="visited-places__control-input" type="checkbox" name="slide-park" checked>Слайд-парк</label>
-          <label class="visited-places__visit-control">
-            <input class="visited-places__control-input" type="checkbox" name="red-rocks">Красные скалы</label>
+          <ul class="visited-places__visited-item">
+            <li class="visited-places__visited-items">
+
+              <input type="checkbox" class="visited-places__control-input" id="input-places" name="bridge-devils"
+                checked>
+              <label for="input-places" class="visited-places__visit-control">Мост
+                Дьявола</label>
+            </li>
+            <li class="visited-places__visited-items">
+              <input type="checkbox" class="visited-places__control-input" id="input-places" name="mountain-bell"
+                checked>
+              <label class="visited-places__visit-control" for="input-places">Гора-колокол</label>
+            </li>
+            <li class="visited-places__visited-items">
+              <input type="checkbox" class="visited-places__control-input" id="input-places" name="slide-park"
+                checked>
+              <label class="visited-places__visit-control" for="input-places">Слайд-парк</label>
+            </li>
+            <li class="visited-places__visited-items">
+              <input type="checkbox" class="visited-places__control-input" id="input-places" name="input-places">
+              <label class="visited-places__visit-control" for="input-places">Красные скалы</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="interestingly__comments-content comments-content">
           <legend class="comments-content__comments-control">Опишите свои эмоции:</legend>
           <textarea class="comments-content__control-comments" name="comments"
             rows="5">Опишите подробно все свои восторги </textarea>
-          <input class="comments-content__input-comments" type="submit" value="Отправить отзыв">
-          <span class="comments-content__comments-title">Обязательные поля*:</span>
+          <div class="comments-content__comments-item">
+            <input class="comments-content__input-comments" type="submit" value="Отправить отзыв">
+            <span class="comments-content__comments-title">Обязательные поля*:</span>
+          </div>
         </fieldset>
       </section>
     </form>
@@ -150,13 +170,13 @@
               <span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
-        <div class="footer-list__developed">
-          <span class="footer-list__html-akademy">Разработанно
-            <a class="footer-list__html-akademy-logo" href="https://htmlacademy.ru/"></a></span>
-          <img class="footer-list__html-akademy-image" src="./img/main-index/footer-htmlacademy.svg" width="27"
-            height="35" alt="html академия.">
-          <span class="visually-hidden">.html academy</span>
-        </div>
+      </div>
+      <div class="footer-list__developed">
+        <span class="footer-list__html-akademy">Разработанно
+          <a class="footer-list__html-akademy-logo" href="https://htmlacademy.ru/"></a></span>
+        <img class="footer-list__html-akademy-image" src="./img/main-index/footer-htmlacademy.svg" width="27"
+          height="34" alt="html академия.">
+        <span class="visually-hidden">.html academy</span>
       </div>
     </div>
   </footer>

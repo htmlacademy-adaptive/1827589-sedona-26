@@ -1,59 +1,120 @@
 .interestingly {
+  min-width:320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    max-width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+  }
 }
 
 .impression-groups {
-  margin-bottom: 24px;
-  border-top: 1px solid;
+  min-width: 320px;
+  border:0;
+  border-bottom: 1px solid;
   border-color: #e5e5e5;
-  width: 280px;
-  padding: 0;
+  padding: 0 0 24px 0;
   display: flex;
   flex-direction: column;
-  border: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 48px 0;
+    border: 1px solid;
+    border-color: #dbdbdb;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 0;
+  }
 }
 
 .impression-groups__impression-title {
-  margin: 0 auto;
-  margin-top: 39px;
   padding-top: 24px;
-  border-top: 1px solid;
-  border-color: #e5e5e5;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 355px;
+    padding-top: 0;
+  }
 }
 
 .impression-groups__impression-list {
-  padding: 0;
+  padding: 0 20px ;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0;
+  }
 }
 
 .impression-groups__impression-item {
   padding: 0;
+  margin: 20px 0 0 0;
   list-style: none;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 288px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 296px;
+  }
 }
 
 .impression-groups__impression-control {
-  padding-top: 20px;
   display: flex;
   align-items: center;
 }
 
 .impression-groups__control-input {
+  position: absolute;
   width: 46px;
   height: 46px;
+  z-index: 0;
+  opacity: 0;
   margin: 0;
+}
+
+
+.impression-groups__control-input+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.impression-groups__control-input+label::before {
+  content: '';
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  background-color: #f2f2f2;
+  border-radius: 50%;
   margin-right: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.impression-groups__control-input:checked+label::before {
+  background-color: #f2f2f2;
+  background-image: url("../../img/main-index/Shape.svg");
 }
