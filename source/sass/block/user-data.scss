@@ -2,4 +2,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 60px;
+  }
+}
+
+.user-data__information {
+  min-width: 320px;
+  border: 1px solid;
+  border-color: #e5e5e5;
+  border-left: 0;
+  border-right: 0;
+  padding: 0 0 39px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100%;
+    margin: 102px 0 63px 0;
+    border: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 67px 0 71px 0;
+  }
 }

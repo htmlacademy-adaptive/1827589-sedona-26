@@ -2,18 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 21px;
   padding: 0;
 }
 
 .main-aside__appointment-caption {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 21px;
   line-height: 26px;
   margin: 0;
@@ -21,14 +17,17 @@
 }
 
 .main-aside__appointment-text {
-  width: 261px;
+  min-width: 261px;
   text-align: center;
+  margin: 26px 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 435px;
+  }
 }
 
 .main-aside__appointment-button {
-  width: 282px;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
+  min-width: 282px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -37,4 +36,16 @@
   color: #ffffff;
   background-color: #81b3d2;
   padding: 16px 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 498px;
+  }
+}
+
+.maps-sedona__contact-maps {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 100%;
+  }
 }

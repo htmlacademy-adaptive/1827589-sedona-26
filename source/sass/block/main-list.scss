@@ -1,14 +1,23 @@
 .main-list {
+  min-width: 320px;
   text-align: center;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .main-list__main-caption {
-  width: 282px;
   margin: 0 auto;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
+  min-width: 282px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }

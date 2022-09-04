@@ -1,38 +1,111 @@
 .visited-places {
-  margin-bottom: 24px;
-  border-top: 1px solid;
+  min-width: 320px;
+  border: 0;
+  border-bottom: 1px solid;
   border-color: #e5e5e5;
-  width: 280px;
-  padding: 0;
+  padding: 0 0 8px 0;
   display: flex;
   flex-direction: column;
-  border: 0;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+    border: 1px solid;
+    border-color: #dbdbdb;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+  }
+}
+
+.visited-places__visited-item {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.visited-places__visited-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 16px 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 222px;
+  }
 }
 
 .visited-places__visited-places-title {
-  margin: 0 auto;
-  margin-top: 39px;
+  width: 280px;
   padding-top: 24px;
-  border-top: 1px solid;
-  border-color: #e5e5e5;
-  font-family: "PT Sans"sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 355px;
+    padding-top: 0;
+  }
 }
 
 .visited-places__visit-control {
-  padding-top: 20px;
   display: flex;
   align-items: center;
   text-transform: none;
 }
 
 .visited-places__control-input {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 0;
+  opacity: 0;
+}
+
+
+.visited-places__control-input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.visited-places__control-input + label ::before {
+  content: "";
+  display: inline-block;
   width: 46px;
   height: 46px;
-  margin: 0;
+  border: 0;
+  background-color: #f2f2f2;
+  border-radius: 10px;
   margin-right: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.visited-places__control-input :checked + label ::before {
+  background-color: #f2f2f2;
+  background-image: url("../../img/main-index/tick.svg");
 }

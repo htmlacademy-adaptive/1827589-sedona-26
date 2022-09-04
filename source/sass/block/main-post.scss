@@ -2,27 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-post__opininion-caption {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 21px;
   line-height: 26px;
   margin: 0;
 }
 
 .main-post__opininion-text {
-  width: 282px;
-  margin: 0 auto;
+  min-width: 282px;
   padding-top: 26px;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
 }
